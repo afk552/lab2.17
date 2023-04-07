@@ -192,7 +192,6 @@ def select_people(cmd, people_list):
 
 
 def main():
-    print("Команды должны включать имя файла, например: add a.json <args>")
     cli()
 
 

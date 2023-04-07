@@ -139,7 +139,6 @@ def main(command_line=None):
     """
     Основная функция программы
     """
-
     # Создать родительский парсер для определения имени файла
     file_parser = argparse.ArgumentParser(add_help=False)
     file_parser.add_argument(
@@ -225,7 +224,7 @@ def main(command_line=None):
         selected = select_people(people, corrected_month)
         display_people(selected)
 
-    # Сохранить данные в файл, если список работников был изменен.
+    # Сохранить данные в файл, если список был изменен.
     if is_dirty:
         save_workers(args.filename, people)
 
